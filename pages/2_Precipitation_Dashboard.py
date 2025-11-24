@@ -1148,7 +1148,7 @@ with lc:
                     Country: {display_country_name(iso3)} ({iso3})
                 </span>
                 <span style="font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #cbd5e1;color:#334155;">
-                    ADM1 with data: {regions_with_data}/{n_features}
+                    ADM1 with data: {regions_with_data}/{len(df_map)}
                 </span>
                 <span style="font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #cbd5e1;color:#334155;">
                     Latest period: {latest_period}
@@ -1823,3 +1823,4 @@ _percentile_chart_map = [
 ]
 for _title, _code, _key in _percentile_chart_map:
     _percentile_chart_p(_title, _code, _key, _pct_story, units=("mm" if _code=="PCPS" else "mm/day"))
+
