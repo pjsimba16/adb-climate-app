@@ -1105,7 +1105,7 @@ with lc:
                     Country: {display_country_name(iso3)} ({iso3})
                 </span>
                 <span style="font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #cbd5e1;color:#334155;">
-                    ADM1 with data: {regions_with_data}/{n_features}
+                    ADM1 with data: {regions_with_data}/{len(df_map)}
                 </span>
                 <span style="font-size:12px;padding:4px 8px;border-radius:999px;border:1px solid #cbd5e1;color:#334155;">
                     Latest period: {latest_period}
@@ -1746,3 +1746,4 @@ for _title, _code, _key in [
     ("Minimum Relative Humidity — Percentiles", "HUMN", "pct_humn"),
 ]:
     _pct_block(_title, _code, _key, _pct_story)
+
